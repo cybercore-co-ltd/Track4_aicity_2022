@@ -1,0 +1,1 @@
+from .aicity_classifier import AICityImageClassifier
