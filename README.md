@@ -98,6 +98,7 @@ data
     conda activate aicity22_track4
     # Install others
     conda install pytorch=1.10.0 torchvision cudatoolkit=10.2 -c pytorch -y
+    conda install cython -y
     pip install openmim future tensorboard sklearn timm==0.4.12 tqdm torch_optimizer shapely scikit-learn scikit-image albumentations lap cython_bbox numba
     pip install git+https://github.com/thuyngch/cvut
     mim install mmcv-full==1.4.6 -f https://download.openmmlab.com/mmcv/dist/cu102/torch1.10.0/index.html -y
