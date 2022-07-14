@@ -1,5 +1,7 @@
 # Code release for AI City Challenge 2022 - Track 4 - Team 9
 
+Paper: [Improving Domain Generalization by Learning without Forgetting: Application in Retail Checkout](https://arxiv.org/abs/2207.05422)
+
 ## Table of contents
 
 1. [Operating Systems and Hardware Specs](#operating-systems-and-hardware-specs)
