@@ -39,12 +39,7 @@ Our solution wins the 1st place Track 4. https://www.aicitychallenge.org/2022-ch
 
 ## Dataset preparation and environment setup
 
-To train the detector/classifier models, we must [prepare training dataset](#dataset-preparation), then [Set up environment](#environment-setup).
-
-### Dataset preparation
-
 - If you use our trained models, you can download [here](http://118.69.233.170:60001/open/AICity/track4/ckpts.zip) and ignore the `dataset preparation` step. Unzip the .zip file in the code directory. You should see the following structure:
-
 ```bash
     work_dirs
     ├── lwof_frcnn_swin_shapenet_gan
@@ -56,6 +51,16 @@ To train the detector/classifier models, we must [prepare training dataset](#dat
     └── swins_4xb256_10e_aicity22t4
         └── epoch_10.pth
 ```
+
+- We split the dataset `Auto-retail-syndata-release` (provided by the challenge) into train and val sets. Please download the annotation files via the [link](http://118.69.233.170:60001/open/AICity/track4/anns.zip). Then, unzip it into `./data/Auto-retail-syndata-release/anns` as the following:
+```bash
+./data/Auto-retail-syndata-release/anns
+├── train.txt
+└── val.txt
+```
+
+
+### Dataset preparation
 
 - We created datasets for training from random backgrounds and GANs pre-trained model.
 
@@ -70,7 +75,7 @@ cd  ../..
 Dataset will be created in `data` folder with following structure:
 
 ```
-data
+./data
 ├── annotations
 ├── biggan_imagenet
 ├── CelebA_128x128_N2M2S64
